@@ -33,7 +33,7 @@ Standard LAMP/LEMP Docker stacks are notoriously bloated. A typical setup requir
 
 **In Scope:**
 
-- Alpine Linux 3.24 with native, pre-compiled PHP 8.4 and MariaDB packages.
+- Alpine Linux 3.24 with native, pre-compiled PHP 8.4.25 and MariaDB 11.8.8 packages.
 - PHP's built-in development server (no Nginx/Apache/PHP-FPM).
 - Unix socket communication between phpMyAdmin and MariaDB. No Networking/ TCP overhead or latency.
 - Aggressive stripping of unused files, translations and documentation.
@@ -114,8 +114,6 @@ Create a `.env` file or modify the `docker-compose.yml` directly:
 ```env
 MYSQL_ROOT_PASSWORD=root
 MYSQL_DATABASE=dev_db
-MYSQL_USER=dev_user
-MYSQL_PASSWORD=dev_pass
 ```
 
 ### 3. Up and Run
@@ -128,7 +126,7 @@ docker compose up -d
 
 - **phpMyAdmin GUI:** Open your browser and navigate to `http://localhost:8080`
 - **Direct DB Connection:** Connect your local DB client to `localhost:3306`
-- **Credentials:** Use the `MYSQL_USER` and `MYSQL_PASSWORD` defined in your environment.
+- **Credentials:** Use `root` both for username and password.
 
 ### Expected Outcome
 
