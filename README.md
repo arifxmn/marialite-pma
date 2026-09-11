@@ -123,3 +123,13 @@ MYSQL_PASSWORD=dev_pass
 ```bash
 docker compose up -d
 ```
+
+### 4. Access the Environment
+
+- **phpMyAdmin GUI:** Open your browser and navigate to `http://localhost:8080`
+- **Direct DB Connection:** Connect your local DB client to `localhost:3306`
+- **Credentials:** Use the `MYSQL_USER` and `MYSQL_PASSWORD` defined in your environment.
+
+### Expected Outcome
+
+The container will start in under 2 seconds. You will see a minimal, english-only phpMyAdmin interface. The database will be initialized with your specified user and database.
