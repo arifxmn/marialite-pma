@@ -85,7 +85,7 @@ Standard LAMP/LEMP Docker stacks are notoriously bloated. A typical setup requir
 
 ## Value Proposition
 
-| Feature            | Standard LAMP Stack                | Nano-DB-PMA (This Project)      |
+| Feature            | Standard LAMP Stack                | MariaLite-PMA (This Project)      |
 | :----------------- | :--------------------------------- | :------------------------------ |
 | **Architecture**   | 3+ Containers (Nginx, PHP-FPM, DB) | **1 Single Container**          |
 | **Image Size**     | ~500MB - 800MB                     | **~90MB (Uncompressed)**        |
