@@ -1,0 +1,17 @@
+services:
+  marialite:
+    image: docker.io/arifxaman/marialite-pma
+    container_name: MariaLite-PMA
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dev_db
+    volumes:
+      # Persist database data across container restarts
+      - marialite_data:/var/lib/mysql
+    ports:
+      - "8080:8080" # phpMyAdmin
+      - "3306:3306" # MariaDB
+
+volumes:
+  marialite_data:
