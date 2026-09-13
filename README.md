@@ -2,9 +2,11 @@
 
 A hyper-optimized, single-container docker environment combining MariaDB (100% MySQL Compatible) and phpMyAdmin, engineered for absolute minimal resource consumption, maximum effeciency, ease-of-use and instant startup times.
 
+![image](./project-image.jpeg)
+
 ## Target Audience
 
-The project is mainly aimed at developers, testers, students and system administrators who need a frictionless, highly-optimized, low-overhead and already configured database management environment with a nice & easy integrated web interface.
+The project is primarily aimed at developers, testers, students and system administrators who need a frictionless, highly-optimized, low-overhead and already configured database management environment with a nice & easy integrated web interface.
 
 - **Solo Developers & Students:** Looking for a hassle-free way to manage their mysql / mariadb databases with a fast, responsive GUI without bloating their local machines.
 - **CI/CD Pipelines:** Require ephemeral, fast-booting database environments for automated testing.
